@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-public class Controller implements Initializable {
+public class MainController implements Initializable {
 
     @FXML
     private TableView messagesTableView;

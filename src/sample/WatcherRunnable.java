@@ -19,10 +19,10 @@ import static java.nio.file.StandardWatchEventKinds.*;
  */
 public class WatcherRunnable implements Runnable {
 
-    Controller controller;
+    MainController mainController;
 
-    public WatcherRunnable(Controller controller) {
-        this.controller = controller;
+    public WatcherRunnable(MainController mainController) {
+        this.mainController = mainController;
     }
 
     @Override
@@ -58,7 +58,7 @@ public class WatcherRunnable implements Runnable {
                             message.setMessageType(MessageType.DELETE);
                         }
 
-                        controller.addMessage(message);
+                        mainController.addMessage(message);
 
                         key.reset();
                     }

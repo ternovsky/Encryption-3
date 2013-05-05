@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:mainController="sample.MainController">
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true">
+            <content>
+                <TableView fx:id="messagesTableView" prefHeight="561.0" prefWidth="900.0">
+                    <columns>
+                        <TableColumn prefWidth="200.0" text="Time">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="date"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="200.0" text="Type">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="messageType"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="300.0" text="File">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="fileName"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+    </center>
+    <top>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>
