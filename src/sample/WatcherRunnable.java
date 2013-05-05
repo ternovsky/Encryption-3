@@ -1,7 +1,12 @@
 package sample;
 
+import com.ternovsky.model.Message;
+import com.ternovsky.model.MessageType;
+
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.Date;
 
 import static java.nio.file.StandardWatchEventKinds.*;
 
@@ -18,7 +23,6 @@ public class WatcherRunnable implements Runnable {
 
     public WatcherRunnable(Controller controller) {
         this.controller = controller;
-
     }
 
     @Override
@@ -35,13 +39,26 @@ public class WatcherRunnable implements Runnable {
                         WatchEvent.Kind kind = event.kind();
                         if (kind == OVERFLOW) {
                             continue;
-                        } else if (kind == ENTRY_CREATE) {
-                            controller.addMessage("ENTRY_CREATE");
-                        } else if (kind == ENTRY_MODIFY) {
-                            controller.addMessage("ENTRY_MODIFY");
-                        } else if (kind == ENTRY_DELETE) {
-                            controller.addMessage("ENTRY_DELETE");
                         }
+
+                        WatchEvent<Path> ev = cast(event);
+                        Path filePath = watchedDirectoryPath.resolve(ev.context());
+                        File file = filePath.toFile();
+
+                        Message message = new Message();
+                        message.setDate(new Date());
+                        message.setFile(file);
+                        message.setFileName(file.getName());
+
+                        if (kind == ENTRY_CREATE) {
+                            message.setMessageType(MessageType.CREATE);
+                        } else if (kind == ENTRY_MODIFY) {
+                            message.setMessageType(MessageType.UPDATE);
+                        } else if (kind == ENTRY_DELETE) {
+                            message.setMessageType(MessageType.DELETE);
+                        }
+
+                        controller.addMessage(message);
 
                         key.reset();
                     }
@@ -53,5 +70,10 @@ public class WatcherRunnable implements Runnable {
             System.err.println(e.getMessage());
         }
 
+    }
+
+    @SuppressWarnings("unchecked")
+    static <T> WatchEvent<T> cast(WatchEvent<?> event) {
+        return (WatchEvent<T>) event;
     }
 }
