@@ -1,7 +1,6 @@
-package sample;
+package com.ternovsky.model;
 
-import com.ternovsky.model.Message;
-import com.ternovsky.model.MessageType;
+import com.ternovsky.ui.MainController;
 
 import java.io.File;
 import java.io.IOException;

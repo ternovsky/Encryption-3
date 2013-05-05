@@ -1,6 +1,7 @@
-package sample;
+package com.ternovsky.ui;
 
 import com.ternovsky.model.Message;
+import com.ternovsky.model.WatcherRunnable;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

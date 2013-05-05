@@ -3,7 +3,7 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.BorderPane?>
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:mainController="sample.MainController">
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.ternovsky.ui.MainController">
     <center>
         <ScrollPane fitToWidth="true" fitToHeight="true">
             <content>
