@@ -1,5 +1,6 @@
 package com.ternovsky;
 
+import com.ternovsky.model.WatcherRunnable;
 import com.ternovsky.ui.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -9,14 +10,33 @@ import javafx.scene.Scene;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadFactory;
+
 public class Main extends Application {
+
+    private ExecutorService executorService = Executors.newSingleThreadExecutor(
+            new ThreadFactory() {
+                @Override
+                public Thread newThread(Runnable runnable) {
+                    Thread thread = new Thread(runnable);
+                    thread.setDaemon(true);
+
+                    return thread;
+                }
+            }
+    );
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         Screen screen = Screen.getPrimary();
         Rectangle2D bounds = screen.getVisualBounds();
 
-        Parent root = FXMLLoader.load(MainController.class.getResource("main.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainController.class.getResource("main.fxml"));
+        Parent root = (Parent) loader.load();
+        MainController mainController = loader.getController();
+
         primaryStage.setX(bounds.getMinX());
         primaryStage.setY(bounds.getMinY());
         primaryStage.setWidth(bounds.getWidth());
@@ -24,6 +44,8 @@ public class Main extends Application {
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
+
+        executorService.execute(new WatcherRunnable(mainController));
     }
 
     public static void main(String[] args) {

@@ -20,12 +20,10 @@ public class MainController implements Initializable {
     private TableView messagesTableView;
 
     private ObservableList<Message> observableList = FXCollections.observableArrayList();
-    private Executor executor = Executors.newSingleThreadExecutor();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         messagesTableView.setItems(observableList);
-        executor.execute(new WatcherRunnable(this));
     }
 
     public void addMessage(final Message message) {
