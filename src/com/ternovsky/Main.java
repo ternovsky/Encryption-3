@@ -10,6 +10,8 @@ import javafx.scene.Scene;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
@@ -34,6 +36,7 @@ public class Main extends Application {
         Rectangle2D bounds = screen.getVisualBounds();
 
         FXMLLoader loader = new FXMLLoader(MainController.class.getResource("main.fxml"));
+        loader.setResources(ResourceBundle.getBundle("com.ternovsky.message"));
         Parent root = (Parent) loader.load();
         MainController mainController = loader.getController();
 
