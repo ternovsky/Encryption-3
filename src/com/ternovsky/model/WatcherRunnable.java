@@ -34,11 +34,6 @@ public class WatcherRunnable implements Runnable {
             watchedDirectoryPath.register(watchService, ENTRY_CREATE, ENTRY_DELETE, ENTRY_MODIFY);
 
             while (true) {
-                if (Thread.interrupted()) {
-                    watchService.close();
-                    return;
-                }
-
                 try {
                     WatchKey key = watchService.take();
                     for (WatchEvent<?> event : key.pollEvents()) {
@@ -69,7 +64,8 @@ public class WatcherRunnable implements Runnable {
                         key.reset();
                     }
                 } catch (InterruptedException e) {
-                    System.err.println(e.getMessage());
+                    watchService.close();
+                    return;
                 }
             }
         } catch (IOException e) {

@@ -24,7 +24,6 @@ import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
 
-    private static final String SPACE = "    ";
     private static final String USER_DIR = "user.dir";
 
     @FXML
@@ -85,7 +84,7 @@ public class MainController implements Initializable {
             thread.interrupt();
         }
         observableList.clear();
-        directoryAbsolutePathLabel.setText(absolutePath + SPACE);
+        directoryAbsolutePathLabel.setText(absolutePath);
         thread = new Thread(new WatcherRunnable(this, absolutePath));
         thread.setDaemon(true);
         thread.start();
