@@ -18,18 +18,6 @@ import java.util.concurrent.ThreadFactory;
 
 public class Main extends Application {
 
-    private ExecutorService executorService = Executors.newSingleThreadExecutor(
-            new ThreadFactory() {
-                @Override
-                public Thread newThread(Runnable runnable) {
-                    Thread thread = new Thread(runnable);
-                    thread.setDaemon(true);
-
-                    return thread;
-                }
-            }
-    );
-
     @Override
     public void start(Stage primaryStage) throws Exception {
         Screen screen = Screen.getPrimary();
@@ -43,11 +31,9 @@ public class Main extends Application {
         primaryStage.setY(bounds.getMinY());
         primaryStage.setWidth(bounds.getWidth());
         primaryStage.setHeight(bounds.getHeight());
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Directory monitor");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-
-        executorService.execute(new WatcherRunnable(mainController));
     }
 
     public static void main(String[] args) {

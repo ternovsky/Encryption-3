@@ -19,19 +19,26 @@ import static java.nio.file.StandardWatchEventKinds.*;
 public class WatcherRunnable implements Runnable {
 
     MainController mainController;
+    String path;
 
-    public WatcherRunnable(MainController mainController) {
+    public WatcherRunnable(MainController mainController, String path) {
         this.mainController = mainController;
+        this.path = path;
     }
 
     @Override
     public void run() {
         try {
             WatchService watchService = FileSystems.getDefault().newWatchService();
-            Path watchedDirectoryPath = Paths.get("C:\\Users\\ternovsky\\Desktop");
+            Path watchedDirectoryPath = Paths.get(path);
             watchedDirectoryPath.register(watchService, ENTRY_CREATE, ENTRY_DELETE, ENTRY_MODIFY);
 
             while (true) {
+                if (Thread.interrupted()) {
+                    watchService.close();
+                    return;
+                }
+
                 try {
                     WatchKey key = watchService.take();
                     for (WatchEvent<?> event : key.pollEvents()) {
