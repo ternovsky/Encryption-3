@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ternovsky/Main.java" afterPath="$PROJECT_DIR$/src/com/ternovsky/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ternovsky/ui/MainController.java" afterPath="$PROJECT_DIR$/src/com/ternovsky/ui/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ternovsky/model/Message.java" afterPath="$PROJECT_DIR$/src/com/ternovsky/model/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ternovsky/model/WatcherRunnable.java" afterPath="$PROJECT_DIR$/src/com/ternovsky/model/WatcherRunnable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ternovsky/ui/help.fxml" afterPath="$PROJECT_DIR$/src/com/ternovsky/ui/help.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ternovsky/ui/main.fxml" afterPath="$PROJECT_DIR$/src/com/ternovsky/ui/main.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -15,7 +10,7 @@
     <file path="/Main.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367867975237" ignored="false" />
     <file path="/Controller.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367757641917" ignored="false" />
     <file path="/sample.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367676746307" ignored="false" />
-    <file path="/Dummy.txt" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367867456201" ignored="false" />
+    <file path="/Dummy.txt" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367870174593" ignored="false" />
     <file path="/select-directory-dialog.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367781366032" ignored="false" />
     <file path="/WatcherRunnable.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367845536639" ignored="false" />
     <file path="/fragment.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367784317872" ignored="false" />
@@ -87,10 +82,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ternovsky/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="484" selection-end="484" vertical-scroll-proportion="0.5148248">
+            <state line="17" column="30" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,10 +131,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.fxml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.fxml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ternovsky/ui/main.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="97" selection-start="2360" selection-end="2360" vertical-scroll-proportion="0.0">
+            <state line="41" column="36" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.68733156">
               <folding />
             </state>
           </provider>
@@ -553,7 +548,11 @@
       <created>1367846035474</created>
       <updated>1367846035474</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Small refactoring">
+      <created>1367870183016</created>
+      <updated>1367870183016</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -631,7 +630,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="First stable version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small refactoring" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -655,6 +654,7 @@
     <MESSAGE value="Help widow are added" />
     <MESSAGE value="Need multi threading reorganization" />
     <MESSAGE value="First stable version" />
+    <MESSAGE value="Small refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -727,6 +727,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ternovsky/ui/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="38" selection-start="2027" selection-end="2048" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ternovsky/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="30" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ternovsky/model/WatcherRunnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="28" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
@@ -741,26 +757,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ternovsky/ui/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="38" selection-start="2027" selection-end="2048" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ternovsky/ui/main.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="97" selection-start="2360" selection-end="2360" vertical-scroll-proportion="0.0">
+        <state line="41" column="36" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.68733156">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ternovsky/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="484" selection-end="484" vertical-scroll-proportion="0.5148248">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

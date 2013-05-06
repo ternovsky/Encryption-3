@@ -29,17 +29,17 @@
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
                     </columnResizePolicy>
                     <columns>
-                        <TableColumn prefWidth="200.0" text="Время">
+                        <TableColumn text="Время">
                             <cellValueFactory>
                                 <PropertyValueFactory property="date"/>
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn prefWidth="200.0" text="Тип события">
+                        <TableColumn text="Тип события">
                             <cellValueFactory>
                                 <PropertyValueFactory property="messageType"/>
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn prefWidth="300.0" text="Имя файла">
+                        <TableColumn text="Имя файла">
                             <cellValueFactory>
                                 <PropertyValueFactory property="fileName"/>
                             </cellValueFactory>
