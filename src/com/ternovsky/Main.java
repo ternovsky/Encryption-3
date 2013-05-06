@@ -36,7 +36,6 @@ public class Main extends Application {
         Rectangle2D bounds = screen.getVisualBounds();
 
         FXMLLoader loader = new FXMLLoader(MainController.class.getResource("main.fxml"));
-        loader.setResources(ResourceBundle.getBundle("com.ternovsky.message"));
         Parent root = (Parent) loader.load();
         MainController mainController = loader.getController();
 

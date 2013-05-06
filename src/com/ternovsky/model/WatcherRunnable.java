@@ -52,7 +52,7 @@ public class WatcherRunnable implements Runnable {
                         if (kind == ENTRY_CREATE) {
                             message.setMessageType(MessageType.CREATE);
                         } else if (kind == ENTRY_MODIFY) {
-                            message.setMessageType(MessageType.UPDATE);
+                            message.setMessageType(MessageType.MODIFY);
                         } else if (kind == ENTRY_DELETE) {
                             message.setMessageType(MessageType.DELETE);
                         }

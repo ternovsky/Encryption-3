@@ -8,5 +8,19 @@ package com.ternovsky.model;
  * To change this template use File | Settings | File Templates.
  */
 public enum MessageType {
-    UPDATE, CREATE, DELETE
+
+    MODIFY("Изменение"),
+    CREATE("Создание"),
+    DELETE("Удаление");
+
+    private String message;
+
+    private MessageType(String message) {
+        this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        return message;
+    }
 }

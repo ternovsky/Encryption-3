@@ -5,24 +5,24 @@
 <?import javafx.scene.layout.BorderPane?>
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.ternovsky.ui.MainController">
     <center>
-        <ScrollPane fitToWidth="true" fitToHeight="true">
+        <ScrollPane fitToHeight="true" fitToWidth="true">
             <content>
                 <TableView fx:id="messagesTableView" prefHeight="561.0" prefWidth="900.0">
                     <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
                     </columnResizePolicy>
                     <columns>
-                        <TableColumn prefWidth="200.0" text="%time">
+                        <TableColumn prefWidth="200.0" text="Время">
                             <cellValueFactory>
                                 <PropertyValueFactory property="date"/>
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn prefWidth="200.0" text="Type">
+                        <TableColumn prefWidth="200.0" text="Тип события">
                             <cellValueFactory>
                                 <PropertyValueFactory property="messageType"/>
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn prefWidth="300.0" text="File">
+                        <TableColumn prefWidth="300.0" text="Имя файла">
                             <cellValueFactory>
                                 <PropertyValueFactory property="fileName"/>
                             </cellValueFactory>
@@ -35,14 +35,14 @@
     <top>
         <MenuBar>
             <menus>
-                <Menu mnemonicParsing="false" text="File">
+                <Menu mnemonicParsing="false" text="Файл">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Close"/>
+                        <MenuItem mnemonicParsing="false" onAction="#exitAction" text="Выход"/>
                     </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Help">
+                <Menu mnemonicParsing="false" text="Помощь">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="About"/>
+                        <MenuItem mnemonicParsing="false" onAction="#helpAction" text="О программе"/>
                     </items>
                 </Menu>
             </menus>
