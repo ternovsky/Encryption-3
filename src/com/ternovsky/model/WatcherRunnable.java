@@ -48,7 +48,6 @@ public class WatcherRunnable implements Runnable {
 
                         Message message = new Message();
                         message.setDate(new Date());
-                        message.setFile(file);
                         message.setFileName(file.getName());
 
                         if (kind == ENTRY_CREATE) {

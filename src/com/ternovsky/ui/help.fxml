@@ -1,5 +1,10 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml" prefHeight="300" prefWidth="500">
-    <Label text="Описание"/>
+    <VBox>
+        <Label text="Программа отслеживает изменения в указанной папке."/>
+        <Label text="Абсолютный путь текущей папки отображается на нижней панели слева."/>
+        <Label text="Изменить ее можно кнопкой 'Выбор папки' на нижней панели справа."/>
+    </VBox>
 </AnchorPane>

@@ -2,7 +2,6 @@ package com.ternovsky.model;
 
 import javafx.beans.property.SimpleStringProperty;
 
-import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -20,15 +19,6 @@ public class Message {
     private final SimpleStringProperty date = new SimpleStringProperty("");
     private final SimpleStringProperty messageType = new SimpleStringProperty("");
     private final SimpleStringProperty fileName = new SimpleStringProperty("");
-    private File file;
-
-    public File getFile() {
-        return file;
-    }
-
-    public void setFile(File file) {
-        this.file = file;
-    }
 
     public SimpleStringProperty dateProperty() {
         return date;

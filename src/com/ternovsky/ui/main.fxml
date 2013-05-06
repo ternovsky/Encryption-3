@@ -51,7 +51,7 @@
     </center>
     <bottom>
         <AnchorPane>
-            <Button text="Выбор папки" onAction="#selectFolderAction" AnchorPane.rightAnchor="10"/>
+            <Button text="Выбор папки" onAction="#changeDirectoryAction" AnchorPane.rightAnchor="0"/>
             <Label fx:id="directoryAbsolutePathLabel" AnchorPane.leftAnchor="10"/>
         </AnchorPane>
     </bottom>

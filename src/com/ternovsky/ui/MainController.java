@@ -69,12 +69,11 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void selectFolderAction(ActionEvent event) {
-        DirectoryChooser chooser;
-        chooser = new DirectoryChooser();
-        chooser.setTitle("Выбор папки");
-        chooser.setInitialDirectory(initialDirectory);
-        File selectedDirectory = chooser.showDialog(null);
+    private void changeDirectoryAction(ActionEvent event) {
+        DirectoryChooser directoryChooser = new DirectoryChooser();
+        directoryChooser.setTitle("Выбор папки");
+        directoryChooser.setInitialDirectory(initialDirectory);
+        File selectedDirectory = directoryChooser.showDialog(null);
         String absolutePath = selectedDirectory.getAbsolutePath();
         changeDirectory(absolutePath);
     }
