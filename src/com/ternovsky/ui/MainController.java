@@ -40,7 +40,7 @@ public class MainController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         messagesTableView.setItems(observableList);
 
-        initialDirectory = new File(System.getProperty(USER_DIR));
+        initialDirectory = new File(System.getProperty(null, ""));
         changeDirectory(initialDirectory.getAbsolutePath());
     }
 
