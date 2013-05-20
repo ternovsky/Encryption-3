@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ternovsky/ui/main.fxml" afterPath="$PROJECT_DIR$/src/com/ternovsky/ui/main.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ternovsky/Main.java" afterPath="$PROJECT_DIR$/src/com/ternovsky/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ternovsky/ui/help.fxml" afterPath="$PROJECT_DIR$/src/com/ternovsky/ui/help.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -10,7 +11,7 @@
     <file path="/Main.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367867975237" ignored="false" />
     <file path="/Controller.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367757641917" ignored="false" />
     <file path="/sample.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367676746307" ignored="false" />
-    <file path="/Dummy.txt" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367870174593" ignored="false" />
+    <file path="/Dummy.txt" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1369065664326" ignored="false" />
     <file path="/select-directory-dialog.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367781366032" ignored="false" />
     <file path="/WatcherRunnable.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367845536639" ignored="false" />
     <file path="/fragment.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367784317872" ignored="false" />
@@ -20,7 +21,7 @@
     <file path="/main.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367870039401" ignored="false" />
     <file path="/message.properties" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367784909070" ignored="false" />
     <file path="/MainController.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367869823625" ignored="false" />
-    <file path="/help.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367869620201" ignored="false" />
+    <file path="/help.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1369065747756" ignored="false" />
     <file path="/a.dummy" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1367845456052" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +37,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -73,6 +73,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -85,10 +86,8 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ternovsky/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="24" column="78" selection-start="855" selection-end="855" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,10 +101,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MessageType.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ternovsky/model/MessageType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="32" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="help.fxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ternovsky/ui/help.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="46" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+            <state line="5" column="90" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,7 +122,7 @@
       <file leaf-file-name="MainController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ternovsky/ui/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="38" selection-start="2027" selection-end="2048" vertical-scroll-proportion="0.0">
+            <state line="75" column="39" selection-start="2291" selection-end="2291" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,9 +132,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/ternovsky/model/Message.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="20" column="79" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,7 +140,7 @@
       <file leaf-file-name="main.fxml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ternovsky/ui/main.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="36" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.68733156">
+            <state line="15" column="39" selection-start="634" selection-end="634" vertical-scroll-proportion="0.42857143">
               <folding />
             </state>
           </provider>
@@ -169,11 +175,11 @@
         <option value="$PROJECT_DIR$/src/com/ternovsky/message.properties" />
         <option value="$PROJECT_DIR$/src/com/ternovsky/model/MessageType.java" />
         <option value="$PROJECT_DIR$/src/com/ternovsky/model/WatcherRunnable.java" />
-        <option value="$PROJECT_DIR$/src/com/ternovsky/ui/help.fxml" />
         <option value="$PROJECT_DIR$/src/com/ternovsky/model/Message.java" />
         <option value="$PROJECT_DIR$/src/com/ternovsky/ui/MainController.java" />
-        <option value="$PROJECT_DIR$/src/com/ternovsky/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ternovsky/ui/main.fxml" />
+        <option value="$PROJECT_DIR$/src/com/ternovsky/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/ternovsky/ui/help.fxml" />
       </list>
     </option>
   </component>
@@ -212,7 +218,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,6 +305,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,6 +317,7 @@
     <property name="options.lastSelected" value="File.Encoding" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -552,7 +559,11 @@
       <created>1367870183016</created>
       <updated>1367870183016</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Deleted prefWidth of TableColumns">
+      <created>1367870289695</created>
+      <updated>1367870289695</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -565,13 +576,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36070853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36070853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -582,6 +591,8 @@
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -630,7 +641,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted prefWidth of TableColumns" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -655,6 +666,7 @@
     <MESSAGE value="Need multi threading reorganization" />
     <MESSAGE value="First stable version" />
     <MESSAGE value="Small refactoring" />
+    <MESSAGE value="Deleted prefWidth of TableColumns" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -704,6 +716,18 @@
         <state line="58" column="17" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_21/jre/lib/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="207" column="25" selection-start="10683" selection-end="10683" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ternovsky/model/WatcherRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="28" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ternovsky/model/MessageType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="32" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
@@ -714,52 +738,34 @@
     <entry file="file://$PROJECT_DIR$/src/com/ternovsky/model/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="79" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_21/jre/lib/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="25" selection-start="10683" selection-end="10683" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ternovsky/ui/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="38" selection-start="2027" selection-end="2048" vertical-scroll-proportion="0.0">
+        <state line="75" column="39" selection-start="2291" selection-end="2291" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ternovsky/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ternovsky/model/WatcherRunnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+        <state line="24" column="78" selection-start="855" selection-end="855" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ternovsky/ui/help.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="46" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+        <state line="5" column="90" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ternovsky/ui/main.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="36" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.68733156">
+        <state line="15" column="39" selection-start="634" selection-end="634" vertical-scroll-proportion="0.42857143">
           <folding />
         </state>
       </provider>

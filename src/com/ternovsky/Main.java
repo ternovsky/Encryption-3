@@ -22,7 +22,7 @@ public class Main extends Application {
         primaryStage.setY(bounds.getMinY());
         primaryStage.setWidth(bounds.getWidth());
         primaryStage.setHeight(bounds.getHeight());
-        primaryStage.setTitle("Программа мониторинга папки");
+        primaryStage.setTitle("Программа мониторинга каталога файловой системы");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
