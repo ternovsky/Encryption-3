@@ -5,6 +5,7 @@ import com.ternovsky.ui.MainController;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Date;
 
 import static java.nio.file.StandardWatchEventKinds.*;
@@ -29,9 +30,22 @@ public class WatcherRunnable implements Runnable {
     @Override
     public void run() {
         try {
-            WatchService watchService = FileSystems.getDefault().newWatchService();
+            final WatchService watchService = FileSystems.getDefault().newWatchService();
             Path watchedDirectoryPath = Paths.get(path);
+
             watchedDirectoryPath.register(watchService, ENTRY_CREATE, ENTRY_DELETE, ENTRY_MODIFY);
+
+            Files.walkFileTree(watchedDirectoryPath, new SimpleFileVisitor<Path>() {
+                @Override
+                public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attributes)
+                        throws IOException {
+
+                    dir.register(watchService, ENTRY_CREATE, ENTRY_DELETE, ENTRY_MODIFY);
+
+                    return FileVisitResult.CONTINUE;
+                }
+            });
+
 
             while (true) {
                 try {
@@ -48,7 +62,7 @@ public class WatcherRunnable implements Runnable {
 
                         Message message = new Message();
                         message.setDate(new Date());
-                        message.setFileName(file.getName());
+                        message.setFileName(file.getCanonicalPath());
 
                         if (kind == ENTRY_CREATE) {
                             message.setMessageType(MessageType.CREATE);
